@@ -1,0 +1,96 @@
+.page-head {
+    font-size: 16px;
+    line-height: 22;
+    color: $color_gray;
+}
+
+.back {
+    margin: 0 $head_margins;
+    font-size: 22px;
+    transform: scale(1.2, 1);
+
+    @include link;
+}
+
+.page-head__search {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.page-head__icon {
+    margin-right: 28px;
+    font-size: 18px;
+
+    @include link;
+}
+
+.new-chats {
+    position: relative;
+    display: inline;
+}
+.new-chats:after {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid $color_white;
+    border-radius: 50%;
+    background-color: $color_green;
+}
+
+.chats-icon {
+    transform: scale(-1, 1);
+}
+
+.search__input {
+    padding: .5em 1em;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.menu-handler {
+    width: 25px;
+    padding: 10px 0;
+
+    @include link;
+}
+.menu-handler:before {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid $color_white;
+    border-radius: 50%;
+    background: $color_red;
+    z-index: 2;
+}
+
+.menu-icon {
+    position: relative;
+    width: 25px;
+    height: 4px;
+    background: $color_gray;
+}
+.menu-icon:before,
+.menu-icon:after {
+    position: absolute;
+    left: -4px;
+    content: '';
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+}
+.menu-icon:before {
+    top: -6px;
+}
+.menu-icon:after {
+    bottom: -6px;
+}

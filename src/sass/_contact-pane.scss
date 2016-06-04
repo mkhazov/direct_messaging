@@ -1,0 +1,60 @@
+.contact-pane {
+    box-sizing: border-box;
+    margin-top: 138px;
+    padding: 0 1.8%;
+}
+
+.contact-pane__name {
+    float: left;
+    font-size: 24px;
+}
+
+.contact-pane__actions {
+    float: right;
+}
+
+.contact-pane__action {
+    margin-left: 24px;
+    font-size: 18px;
+    color: $color_gray;
+
+    @include link;
+}
+
+.contact-pane__photo {
+    overflow: hidden;
+    width: 340px;
+    height: 340px;
+    margin: 106px 0;
+    text-align: center;
+    border-radius: 50%;
+    background: $colorBg_darkGray;
+}
+.contact-pane__photo img {
+    max-width: 250px;
+    padding-top: 40px;
+}
+
+
+.contact-pane__blocking-icon {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 32px;
+    line-height: 32px;
+    color: $color_white;
+
+    @include link;
+}
+.contact-pane__icon-dnd {
+    float: left;
+    background: $color_green;
+}
+.contact-pane__icon-block {
+    position: relative;
+    float: right;
+    width: 47px;
+    height: 51px;
+    background: $color_red;
+    font-size: 24px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Direct Messaging</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="page-head">
+                <div class="page-head__inner">
+                    <div class="page-head__left">
+                    <div class="back fa fa-angle-left"></div>
+                    <div class="page-head__search search">
+                        <input type="text" placeholder="Search..." class="search__input ">
+                    </div>
+                </div>
+
+                <div class="page-head__center">
+                    <div class="page-head__icon new-chats">
+                        <div class="chats-icon fa fa-commenting"></div>
+                    </div>
+                    <div class="page-head__icon new-message-icon fa fa-edit"></div>
+                </div>
+
+                <div class="page-head__right">
+                    <div class="menu-handler">
+                        <div class="menu-icon"></div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="page-contacts">
+                <ul class="contacts-list contacts">
+                    <li class="contacts__item">
+                        <div class="contact">
+                            <div class="contact__photo-wrapper">
+                                <div class="contact__photo">
+                                    <img src="img/bob.png" class="photo">
+                                    <div class="contact__status contact__status_online"></div>
+                                </div>
+                            </div>
+                            <div class="contact__name">Bob</div>
+                        </div>
+                    </li>
+                    <li class="contacts__item">
+                        <div class="contact">
+                            <div class="contact__photo-wrapper">
+                                <div class="contact__photo">
+                                    <img src="img/jarry.png" class="photo">
+                                    <div class="contact__status contact__status_dnd"></div>
+                                </div>
+                            </div>
+                            <div class="contact__name">Jarry</div>
+                        </div>
+                    </li>
+                    <li class="contacts__item contacts__item_selected">
+                        <div class="contact">
+                            <div class="contact__photo-wrapper">
+                                <div class="contact__photo">
+                                    <img src="img/jonathan.png" class="photo">
+                                    <div class="contact__status"></div>
+                                </div>
+                            </div>
+                            <div class="contact__name">Jonathan</div>
+                        </div>
+                    </li>
+                    <li class="contacts__item">
+                        <div class="contact">
+                            <div class="contact__photo-wrapper">
+                                <div class="contact__photo">
+                                    <img src="img/mike.png" class="photo">
+                                    <div class="contact__status contact__status_new"></div>
+                                </div>
+                            </div>
+                            <div class="contact__name">Mike</div>
+                        </div>
+                    </li>
+                    <li class="contacts__item">
+                        <div class="contact">
+                            <div class="contact__photo-wrapper">
+                                <div class="contact__photo">
+                                    <img src="img/suzanne.png" class="photo">
+                                    <div class="contact__status"></div>
+                                </div>
+                            </div>
+                            <div class="contact__name">Suzanne</div>
+                        </div>
+                    </li>
+                    <li class="contacts__item">
+                        <div class="contact">
+                            <div class="contact__photo-wrapper">
+                                <div class="contact__photo">
+                                    <img src="img/tom.png" class="photo">
+                                    <div class="contact__status"></div>
+                                </div>
+                            </div>
+                            <div class="contact__name">Tom</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="chat">
+                <div class="chat__inner">
+                    <ul class="messages">
+                        <li class="message message_by-me">
+                            <div class="message__text">Who says this is not the greatest chat app on earth? 
+My avatar looks amazing! &#58945;</div>
+                            <div class="message__picture">
+                                <img src="img/jonathan.png" class="photo">
+                            </div>
+                        </li>
+                        <li class="message">
+                            <div class="message__text">My mom says its to hard to use... oh and ur avatar is
+from Jozef Kraj&#269;ovi&#269; looks just like u!</div>
+                            <div class="message__picture">
+                                <img src="img/jarry.png" class="photo">
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="chat__footer">
+                        <div class="chat-add-message">
+                            <div class="chat-add-message__picture fa fa-picture-o"></div>
+                            <div class="chat-add-message__text">
+                                <input type="text" class="input chat__input">
+                            </div>
+                            <div class="chat-add-message__voice fa fa-microphone"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-contact-pane contact-pane">
+                <div class="contact-pane__name">Jonathan</div>
+                <div class="contact-pane__actions">
+                    <div class="contact-pane__action fa fa-comments"></div>
+                    <div class="contact-pane__action fa fa-video-camera"></div>
+                    <div class="contact-pane__action fa fa-phone"></div>
+                </div>
+                <div class="contact-pane__photo">
+                    <img src="img/jonathan.png">
+                </div>
+                <div class="contact-pane__blocking">
+                    <div class="contact-pane__blocking-icon contact-pane__icon-dnd fa fa-moon-o"></div>
+                    <div class="contact-pane__blocking-icon contact-pane__icon-block fa fa-user-times"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

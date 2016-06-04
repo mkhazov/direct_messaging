@@ -1,0 +1,33 @@
+.chat__footer {
+    height: $chatFooter_height;
+    border-top: 1px solid $colorBg_gray;
+    color: $color_gray;
+    font-size: 24px;
+    padding: 15px $chat_paddingHor;
+}
+
+.chat-add-message__picture,
+.chat-add-message__text {
+    float: left;
+}
+.chat-add-message__picture,
+.chat-add-message__voice {
+    @include link;
+}
+
+.chat-add-message__picture {
+    margin-right: 25px;
+}
+.chat-add-message__voice {
+    float: right;
+}
+
+.chat-add-message__text {
+    margin-top: -5px;
+    width: calc(100% - 120px);
+}
+
+.chat__input {
+    width: 100%;
+    font-size: 16px;
+}

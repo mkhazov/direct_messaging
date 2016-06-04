@@ -1,0 +1,10 @@
+@mixin link {
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+        -webkit-filter: brightness(1.1);
+                filter: brightness(1.1);
+        -webkit-filter: contrast(1.2);
+                filter: contrast(1.2);
+    }
+}

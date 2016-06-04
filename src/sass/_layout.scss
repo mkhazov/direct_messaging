@@ -1,0 +1,67 @@
+.container {
+    box-sizing: border-box;
+    padding: 105px 59px;
+    background: $colorBg_main;
+}
+
+.page {
+    overflow: hidden;
+    height: $page_height;
+    border-radius: 10px;
+    background: $color_white;
+}
+
+.page-head {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid $colorBg_gray;
+}
+    .page-head__left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+    .page-head__center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+    }
+    .page-head__right {
+        position: absolute;
+        top: 50%;
+        right: $head_margins;
+        transform: translate(0, -50%);
+    }
+
+.page-contacts {
+    float: left;
+    width: $contacts_width;
+    height: 100%;
+    background-color: $colorBg_gray;
+}
+
+.chat {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-right: -$contactPane_width;
+    margin-left: -$contacts_width;
+}
+
+.chat__inner {
+    height: 100%;
+    margin-right: $contactPane_width;
+    margin-left: $contacts_width;
+    padding: $chat_paddingTop 0;
+    border-right: 1px solid $colorBg_gray;
+}
+
+.page-contact-pane {
+    float: right;
+    width: $contactPane_width;
+    height: 100%;
+}

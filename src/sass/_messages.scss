@@ -1,0 +1,53 @@
+$pictureSize: 58px;
+$marginTextPicture: $pictureSize + 26px;
+
+.messages {
+    height: $messages_height;
+    padding: 0 $chat_paddingHor;
+}
+
+.message {
+    position: relative;
+    padding-top: 44px;
+    padding-left: $marginTextPicture;
+}
+.message_by-me {
+    padding-right: $marginTextPicture;
+}
+
+.message__text {
+    padding: 18px 30px;
+    border-radius: 50px;
+}
+.message:not(.message_by-me) .message__text {
+    border-top-left-radius: 0;
+    background: $colorBg_gray;
+    color: $color_black;
+}
+.message_by-me .message__text {
+    border-top-right-radius: 0;
+    background: $colorBg_main;
+    color: $color_white;
+}
+
+.message__picture {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    border-radius: 50%;
+    background: $colorBg_main;
+}
+.message:not(.message_by-me) .message__picture {
+    left: 0;
+}
+.message_by-me .message__picture {
+    right: 0;
+}
+
+.message__picture img {
+    max-width: 39px;
+    padding-top: 8px;
+}

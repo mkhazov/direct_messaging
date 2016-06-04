@@ -1,0 +1,38 @@
+/**
+ * Fonts
+ */
+$fontFamily_main: "VarelaRound";
+
+/**
+ * Colors
+ */
+$color_white: #fff;
+$color_gray: #c7cae1;
+$color_black: #1f2035;
+$color_green: #7cd355;
+$color_red: #de5656;
+
+$colorBg_darkGray: #dbddef;
+$colorBg_main: #6f729a;
+$colorBg_gray: #ebecf9;
+
+/**
+ * Layout sizes
+ */
+$page_height: 990px;
+
+/* Head */
+$head_height: 72px;
+$head_margins: 40px;
+
+/* Contacts */
+$contacts_width: 147px;
+
+/* Chat */
+$chat_paddingTop: 48px;
+$chat_paddingHor: 58px;
+$chatFooter_height: 58px;
+$messages_height: $page_height - $head_height - $chat_paddingTop - $chatFooter_height;
+
+/* Contact-pane */
+$contactPane_width: 30%;
