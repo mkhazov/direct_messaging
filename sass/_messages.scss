@@ -1,9 +1,11 @@
 $pictureSize: 58px;
+$marginMessage: 80px;
 $marginTextPicture: $pictureSize + 26px;
 
 .messages {
     height: $messages_height;
     padding: 0 $chat_paddingHor;
+    overflow-y: auto;
 }
 
 .message {
@@ -11,8 +13,12 @@ $marginTextPicture: $pictureSize + 26px;
     padding-top: 44px;
     padding-left: $marginTextPicture;
 }
+.message:not(.message_by-me) {
+    margin-right: $marginMessage;
+}
 .message_by-me {
     padding-right: $marginTextPicture;
+    margin-left: $marginMessage;
 }
 
 .message__text {

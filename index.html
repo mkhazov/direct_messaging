@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Direct Messaging</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script data-main="js/app" src="../node_modules/requirejs/require.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+
+            <div class="page-head">
+                <div class="page-head__inner">
+                    <div class="page-head__left">
+                        <div class="back fa fa-angle-left"></div>
+                        <div class="page-head__search search">
+                            <input type="text" placeholder="Search..." class="search__input ">
+                        </div>
+                    </div>
+
+                    <div class="page-head__center">
+                        <div class="page-head__icon new-chats">
+                            <div class="chats-icon fa fa-commenting"></div>
+                        </div>
+                        <div class="page-head__icon new-message-icon fa fa-edit"></div>
+                    </div>
+
+                    <div class="page-head__right">
+                        <div class="menu-handler">
+                            <div class="menu-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-contacts">
+                <ul id="contacts" class="contacts-list contacts"></ul>
+            </div>
+            
+            <div id="chat" class="chat"></div>
+
+            <div id="contact-pane" class="page-contact-pane"></div>
+        </div>
+    </div>
+</body>
+</html>

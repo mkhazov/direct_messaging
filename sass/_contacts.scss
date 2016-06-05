@@ -1,5 +1,6 @@
 .contacts-list {
     margin: 0;
+    overflow-y: auto;
 }
 
 .contacts__item {
@@ -12,7 +13,7 @@
     @include link;
 }
 .contacts__item:hover,
-.contacts__item_selected {
+.contacts__item.selected {
     background-color: $color_white;
 }
 
