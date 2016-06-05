@@ -5,8 +5,8 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 var config = {
-     sassPath: './sass/**/*.scss',
-     bowerDir: './bower_components' 
+    sassPath: './sass/**/*.scss',
+    npmPath: './node_modules'
 }
 
 gulp.task('sass', function() {
@@ -28,7 +28,7 @@ gulp.task('sync-js', function () {
 });
 
 gulp.task('fonts', function() {
-    return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*')
+    return gulp.src(config.npmPath + '/font-awesome/fonts/**.*')
         .pipe(gulp.dest('./fonts'));
 });
 
