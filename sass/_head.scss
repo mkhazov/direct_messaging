@@ -10,6 +10,7 @@
     transform: scale(1.2, 1);
 
     @include link;
+    @include hoverEffects;
 }
 
 .page-head__search {
@@ -23,6 +24,7 @@
     font-size: 18px;
 
     @include link;
+    @include hoverEffects;
 }
 
 .new-chats {
@@ -57,6 +59,7 @@
     padding: 10px 0;
 
     @include link;
+    @include hoverEffects;
 }
 .menu-handler:before {
     position: absolute;

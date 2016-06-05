@@ -13,6 +13,7 @@
 .chat-add-message__picture,
 .chat-add-message__voice {
     @include link;
+    @include hoverEffects;
 }
 
 .chat-add-message__picture {

@@ -10,10 +10,6 @@
     height: $page_height;
     border-radius: 10px;
     background: $color_white;
-
-    /* avoid flickering on child elements transitions */
-    position: relative;
-    z-index: 1;
 }
 
 .page-head {
