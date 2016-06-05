@@ -1,8 +1,10 @@
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
+
 @import "_variables.scss";
+@import "_mixins.scss";
+
 @import "_html.scss";
 @import "_layout.scss";
-@import "_common.scss";
 @import "_head.scss";
 @import "_chat.scss";
 @import "_contacts.scss";

@@ -1,6 +1,7 @@
 @mixin link {
     cursor: pointer;
     transition: all .3s ease;
+    z-index: 1; /* avoid flickering on transition */
     &:hover {
         -webkit-filter: brightness(1.1);
                 filter: brightness(1.1);

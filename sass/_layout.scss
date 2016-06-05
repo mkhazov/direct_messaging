@@ -9,6 +9,10 @@
     height: $page_height;
     border-radius: 10px;
     background: $color_white;
+
+    /* avoid flickering on child elements transitions */
+    position: relative;
+    z-index: 1;
 }
 
 .page-head {
@@ -42,6 +46,7 @@
     width: $contacts_width;
     height: 100%;
     background-color: $colorBg_gray;
+    overflow-y: auto;
 }
 
 .chat {
