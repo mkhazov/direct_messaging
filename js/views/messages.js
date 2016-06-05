@@ -33,14 +33,15 @@ function(_, Backbone, messageTemplate) {
         className: 'messages',
 
         initialize: function() {
-            var self = this;
+            var self = this,
+                delay = 400; // delay
 
             this.listenTo(this.collection, 'add', function(message) {
                 var messageView = new App.Views.Message({
                     model: message,
                     chatId: self.options.chatId
                 });
-                this.$el.append(messageView.render().el);
+                messageView.render().$el.hide().appendTo(this.$el).fadeIn(delay);
                 this.el.scrollTop = this.el.scrollHeight;
             });
 

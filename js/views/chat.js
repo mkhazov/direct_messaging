@@ -27,17 +27,25 @@ function(_, Backbone, chatTemplate) {
         },
 
         submit: function(e) {
-            if (e.keyCode == 13) {
+            var text = e.target.value,
+                delay = 800; // delay for auto-reply
+
+            if (text.length && e.keyCode == 13) {
+                e.target.value = '';
+
                 this.collection.add({
                     author: App.Data.userId,
-                    text: e.target.value
+                    text: text
                 });
-                // reply is a copy of your message
-                this.collection.add({
-                    author: this.options.chatId,
-                    text: e.target.value
-                });
-                e.target.value = '';
+
+                window.setTimeout(function() {
+                    // auto-reply (the copy of the sent message)
+                    this.collection.add({
+                        author: this.options.chatId,
+                        text: text
+                    });
+                }.bind(this), delay);
+
             }
         }
     });

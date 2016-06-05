@@ -7,13 +7,11 @@ define(['backbone'], function(Backbone) {
 
     App.Models.Message = Backbone.Model.extend({
         defaults: {
-            id: null,
             /**
              * {@link App.Models.Contact.id} - contact id.
              * @type {?number}
              */
             author: null,
-            chat: null,
             text: '',
         }
     });

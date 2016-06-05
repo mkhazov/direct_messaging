@@ -49,7 +49,7 @@ require(['backbone'], function (Backbone) {
         });
     })(Backbone.View);
 
-    require(['data/contacts', 'router', 'messages', 'chats', 'contacts'], function (contactsData) {
+    require(['data/contacts', 'router', 'messages', 'contacts'], function (contactsData) {
 
         var contacts = App.Data.contacts = new App.Collections.Contacts(contactsData);
 

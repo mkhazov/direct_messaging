@@ -20,6 +20,7 @@ $colorBg_gray: #ebecf9;
  * Layout sizes
  */
 $page_height: 990px;
+$page_width: 1600px;
 
 /* Head */
 $head_height: 72px;
@@ -35,4 +36,4 @@ $chatFooter_height: 58px;
 $messages_height: $page_height - $head_height - $chat_paddingTop - $chatFooter_height;
 
 /* Contact-pane */
-$contactPane_width: 30%;
+$contactPane_width: 530px;
