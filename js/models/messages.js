@@ -1,10 +1,6 @@
 define(['backbone'], function(Backbone) {
     'use strict';
 
-    /**
-     * Messages
-     */
-
     App.Models.Message = Backbone.Model.extend({
         defaults: {
             /**
@@ -13,6 +9,12 @@ define(['backbone'], function(Backbone) {
              */
             author: null,
             text: '',
+        },
+        isMessageByUser: function(userId) {
+            return this.get('author') === userId;
+        },
+        isMessageByCurrentUser: function() {
+            return this.isMessageByUser(App.Data.userId);
         }
     });
 

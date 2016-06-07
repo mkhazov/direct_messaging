@@ -21,7 +21,7 @@ function(_, Backbone, messageTemplate) {
                 };
             this.$el.html(this.template(model));
 
-            if (this.model.get('author') == App.Data.userId) {
+            if (this.model.isMessageByCurrentUser()) {
                 this.$el.addClass('message_by-me');
             }
 
@@ -33,31 +33,24 @@ function(_, Backbone, messageTemplate) {
         className: 'messages',
 
         initialize: function() {
-            var self = this,
-                delay = 400; // delay
+            this.delay = 400;
 
-            this.listenTo(this.collection, 'add', function(message) {
-                var messageView = new App.Views.Message({
-                    model: message,
-                    chatId: self.options.chatId
-                });
-                messageView.render().$el.hide().appendTo(this.$el).fadeIn(delay);
-                this.el.scrollTop = this.el.scrollHeight;
-            });
-
-            Backbone.View.prototype.initialize.apply(this, arguments);
+            this.listenTo(this.collection, 'add', this.addOne.bind(this));
         },
 
         render: function() {
-            this.collection.each(function(message) {
-                var messageView = new App.Views.Message({
-                    model: message,
-                    chatId: this.options.chatId
-                });
-                this.$el.append(messageView.render().el);
-            }.bind(this));
+            this.collection.each(this.addOne.bind(this));
 
             return this;
+        },
+
+        addOne: function(message) {
+            var messageView = new App.Views.Message({
+                model: message,
+                chatId: this.options.chatId
+            });
+            messageView.render().$el.hide().appendTo(this.$el).fadeIn(this.delay = 400);
+            this.el.scrollTop = this.el.scrollHeight;
         }
     });
 

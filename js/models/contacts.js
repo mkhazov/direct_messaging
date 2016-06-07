@@ -1,10 +1,6 @@
 define(['backbone'], function(Backbone) {
     'use strict';
 
-    /**
-     * Contacts
-     */
-
     App.Models.Contact = Backbone.Model.extend({
         defaults: {
             id: null,
@@ -19,8 +15,6 @@ define(['backbone'], function(Backbone) {
             if (messages instanceof Array) {
                 this.set('messages', new App.Collections.Messages(messages));
             }
-
-            Backbone.Model.prototype.initialize.apply(this, arguments);
         }
     });
 
@@ -29,8 +23,6 @@ define(['backbone'], function(Backbone) {
 
         initialize: function() {
             this.listenTo(this, 'change:selected', this.radioSelection);
-
-            Backbone.Collection.prototype.initialize.apply(this, arguments);
         },
 
         radioSelection: function(contact, selected) {
